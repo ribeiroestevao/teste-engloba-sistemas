@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+
+        <script src="https://kit.fontawesome.com/5aace183a9.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="src/css/reset.css">
+        <link rel="stylesheet" href="src/css/style.css">
+    </head>
+    <body>
+        <header>
+            <div class="container">
+                <div class="menu">
+                    <div class="logo">
+                        <a href="/">
+                            <img src="src/img/logoEngloba.png" alt="logo" class="logo">
+                        </a>
+                    </div>
+
+                    <div class="btn-menu" onclick="menuToggle()">
+                        <img src="src/img/menu.png" alt="">
+                    </div>
+
+                    <form class="busca">
+                        <select name="codigo" class="codigo">
+                            <option value="codigo">Código</option>
+                            <option value="00">00</option>
+                            <option value="01">01</option>
+                            <option value="02">02</option>
+                            <option value="03">03</option>
+                            </select>
+                        <input type="text" class="busca-input" placeholder="Pesquisar..."/>
+                        <button class="btn-busca"><i><i class="fa-solid fa-magnifying-glass"></i></i></button>
+                    </form>
+                </div>
+        
+                <div>
+                    <nav>
+                        <ul class="menu-right">
+                            <li><a href="#"><img src="src/img/calendario.png" alt="calendario"></a></li>
+                            <li><a href="#"><img src="src/img/nota.png" alt="notas"></a></li>
+                            <li><a href="#"><img src="src/img/sino.png" alt="sino"></a></li>
+                            <li><a href="#"><img src="src/img/ajuda.png" alt="ajuda"></a></li>
+                            <li class="perfil"><a href="#"><img src="src/img/perfil1.jpg" alt="perfil"></a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>                
+        </header>            
+
+        <main class="conteudo">
+            <section id="menu-aside">
+                <nav>
+                    <ul class="menu-left">
+                        <li class="item"><a href="#"><img src="src/img/caminhao.png" alt=""><span>Operações</span></a></li>
+                        <li class="item"><a href="#"><img src="src/img/grafico.png" alt=""><span>Gestão</span></a></li>
+                        <li class="item"><a href="#"><img src="src/img/moeda.png" alt=""><span>Financeiro</span></a></li>
+                        <li class="item"><a href="#"><img src="src/img/ferramentas.png" alt=""><span>Ferramentas</span></a></li>
+                        <li class="item"><a href="#"><img src="src/img/integracao.png" alt=""><span>Integração</span></a></li>
+                        <li class="item"><a href="#"><img src="src/img/configuracao.png" alt=""><span>Configurações</span></a></li>
+                    </ul>
+                </nav>
+            </section>
+
+            <section class="paineis">
+                <div class="imagem-painel projeto1 mostrar"></div>
+                <div class="imagem-painel projeto2"></div>
+                <div class="imagem-painel projeto3"></div>
+
+                <a href="#" id="btn-voltar" class="seta btn-voltar opacidade">voltar</a>
+                <a href="#" id="btn-avancar" class="seta btn-avancar">avançar</a>
+            </section>
+        </main>
+        <script src="src/js/index.js"></script>
+    </body>
+</html>

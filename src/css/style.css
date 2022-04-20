@@ -1,0 +1,201 @@
+.container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px 2px 3px rgb(228, 223, 223);
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    padding: 10px 15px;
+}
+
+.container .logo {
+    width: 80px;
+    padding-right: 10px;
+    
+}
+
+.container .menu-right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container .menu-right li a img {
+    width: 40px;
+    padding-left: 10px;
+}
+
+.container .menu-right .perfil {
+    padding-right: 10px;
+}
+
+.container .menu-right .perfil a img {
+    width: 50px;
+    border-radius: 5px;
+}
+
+.btn-menu img {
+    width: 25px;
+}
+
+.btn-menu {
+    display: flex;
+    padding: 0 35px;
+    border-left: 1px solid rgb(228, 223, 223);
+    border-right: 1px solid rgb(228, 223, 223);
+}
+
+.btn-menu {
+    cursor: pointer;
+}
+
+.container .menu-left {
+    display: flex;
+}
+
+.busca {
+    padding-left: 10px;
+    border: 1px solid rgb(228, 223, 223);
+    display: flex;
+    justify-content: space-between;
+    margin: 0 10px;
+}
+
+.codigo {
+    border: none;
+    border-right: 1px solid rgb(228, 223, 223);;
+}
+
+.busca-input {
+    border: none;
+    padding: 5px 180px 5px 10px;
+}
+
+.btn-busca {
+    border: none;
+    background: none;
+    padding-right: 10px;    
+}
+
+.conteudo {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 40px;
+    
+}
+
+#menu-aside {
+    display: flex;
+    max-width: 40%;
+      
+}
+
+.menu-left {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 15px 10px;
+    box-shadow: 1px 4px 5px rgb(228, 223, 223);
+    transition: all 0.3s ease-in-out;
+}
+
+.item:hover
+{
+    -webkit-transform: scale(1.0);
+    -ms-transform: scale(1.0);
+    transform: scale(1.1);
+}
+
+.item a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 200px;
+    height: 110px;
+}
+
+.item img {
+    width: 50px;
+    padding-top: 5px;
+    margin-bottom: 20px;
+  
+}
+
+.item img span{
+    width: 100%;
+}
+
+
+/* painel */
+
+.conteudo .paineis {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 500px;
+    position: relative;
+}
+
+.conteudo .paineis .imagem-painel {
+    background-repeat: no-repeat;
+    background-position: center;
+    min-width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: -1;
+    filter: brightness(80%);
+    
+    opacity: 0;
+    transition: 0.32s ease-in-out;
+}
+
+.conteudo .paineis .imagem-painel.mostrar {
+    opacity: 1;
+}
+
+.conteudo .paineis .projeto1 {
+    background-image: url('../img/grafico1.png');
+}
+
+.conteudo .paineis .projeto2 {
+    background-image: url('../img/grafico2.png');    
+}
+
+.conteudo .paineis .projeto3 {
+    background-image: url('../img/grafico3.png'); 
+}
+
+.conteudo .paineis .seta {
+    background-image: url('../img/seta.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    text-indent: 100%;
+    overflow: hidden;
+}
+
+.conteudo .paineis .seta.opacidade {
+    opacity: 0.5;
+}
+
+.conteudo .paineis .seta.btn-voltar {
+    left: 10px;
+    transform: rotateY(180deg);
+}
+
+.conteudo .paineis .seta.btn-avancar {
+    right: 10px;
+}
